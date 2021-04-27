@@ -20,5 +20,5 @@ df['50天'] = df['close'].rolling(50).mean()
 df['200天'] = df['close'].rolling(200).mean()
 plt.rcParams['font.sans-serif']=['SimHei'] #解决中文乱码
 df.plot(grid = True)
-plt.legend(('收盘价','20天', '50天', '200天'), loc='upper right')
+plt.legend(loc='upper right')
 plt.show()
